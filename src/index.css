@@ -1,5 +1,111 @@
+/** basic element controls **/
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+.hidden {
+  display: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+/*Google Font for Logo*/
+@font-face {
+  font-family: "Logo";
+  src: local("Logo"),
+    url("./font/Kalam-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+.logo {
+  padding: 7px;
+  display: block;
+  font-family: Logo, 'Times New Roman', serif;
+  font-size: 30px;
+  color: #bd8a16 !important;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+
+/** NavBar styling **/
+#lg-menu,
+#mobileMenu {
+  border-bottom: 1px solid #bd8a16;
+  margin-bottom: 10px;
+}
+#lg-menu a,
+#mobileMenu a {
+  color: #333;
+  font-weight: bold;
+}
+#lg-menu a:hover,
+#mobileMenu a:hover {
+  color: #bd8a16;
+}
+#lg-menu ul {
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  #mobileMenu,
+  .mobile-menu-group {
+    display: none !important;
+  }
+  #lg-menu ul {
+    display: grid;
+  }
+}
+
+#lg-menu ul {
+  grid-template-columns: repeat(6,
+      minmax(0, 1fr));
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+#lg-menu ul li {
+  margin: auto;
+  text-transform: uppercase;
+}
+#lg-menu ul .li-logo {
+  grid-column: span 2 / span 2;
+}
+
+.mobile-menu-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  padding: 5px 10px;
+  display: block;
+  cursor: pointer;
+  z-index: 99;
+}
+.mobile-menu-group {
+  text-align: center;
+  position: relative;
+  height: 50px;
+}
+#mobileMenu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffd4;
+}
+#mobileMenu ul {
+  padding: 0;
+}
+#mobileMenu li {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 4px;
+}
+#mobileMenu li a {
+  margin: 5px auto;
 }
