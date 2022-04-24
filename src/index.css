@@ -44,6 +44,7 @@ li a {
 #mobileMenu a {
   color: #333;
   font-weight: bold;
+  padding: 0.2rem 0;
 }
 #lg-menu a:hover,
 #mobileMenu a:hover {

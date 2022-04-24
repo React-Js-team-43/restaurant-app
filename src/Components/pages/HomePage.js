@@ -3,7 +3,7 @@ import React from "react"
 function HomePage() {
   return (
     <div>
-      <h1>Welcome to our restaurant</h1>
+      <h1>Welcome to Restaurant 43</h1>
 
       <p> Home page</p>
     </div>
@@ -11,15 +11,3 @@ function HomePage() {
 }
 
 export default HomePage
-
-// import React from "react"
-
-// const HomePage = () => {
-//   return (
-//     <div>
-//       <h1>Header Page</h1>
-//     </div>
-//   )
-// }
-
-// export default HomePage
