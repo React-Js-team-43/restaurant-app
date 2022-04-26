@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useState } from "react"
+import { Link, NavLink } from "react-router-dom"
 
 const Navbar = () => {
-  const restaurantName = "Restaurant 43";
+  const restaurantName = "Restaurant 43"
 
   const collapsedButton = {
     appearance: "linear",
@@ -34,7 +34,7 @@ const Navbar = () => {
         ></div>
       </div>
     ),
-  };
+  }
   const openedButton = {
     appearance: "cross",
     button: (
@@ -66,25 +66,25 @@ const Navbar = () => {
         ></div>
       </div>
     ),
-  };
-  const [menuButton, setMenuButton] = useState(collapsedButton);
+  }
+  const [menuButton, setMenuButton] = useState(collapsedButton)
 
   const controlMobileNavbar = (e) => {
-    const mobileMenu = document.getElementById("mobileMenu");
+    const mobileMenu = document.getElementById("mobileMenu")
     if (mobileMenu.classList.contains("hidden")) {
-      mobileMenu.classList.remove("hidden");
+      mobileMenu.classList.remove("hidden")
     } else {
-      mobileMenu.classList.add("hidden");
+      mobileMenu.classList.add("hidden")
     }
     setMenuButton((prev) =>
       prev.appearance === "linear" ? openedButton : collapsedButton
-    );
-  };
+    )
+  }
 
   const collapseMobileNavbar = (e) => {
-    e.target.parentNode.parentNode.parentNode.classList.add("hidden");
-    setMenuButton(collapsedButton);
-  };
+    e.target.parentNode.parentNode.parentNode.classList.add("hidden")
+    setMenuButton(collapsedButton)
+  }
 
   return (
     <>
@@ -92,26 +92,26 @@ const Navbar = () => {
         <ul>
           <li>
             <NavLink
-              to="about"
+              to="/"
               style={({ isActive }) => {
                 return {
                   color: isActive ? "#bd8a16" : "",
-                };
+                }
               }}
             >
-              About
+              Home
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="contact"
+              to="about"
               style={({ isActive }) => {
                 return {
                   color: isActive ? "#bd8a16" : "",
-                };
+                }
               }}
             >
-              Contact
+              About
             </NavLink>
           </li>
           <li className="li-logo">
@@ -125,7 +125,7 @@ const Navbar = () => {
               style={({ isActive }) => {
                 return {
                   color: isActive ? "#bd8a16" : "",
-                };
+                }
               }}
             >
               Products
@@ -133,14 +133,14 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="services"
+              to="contact"
               style={({ isActive }) => {
                 return {
                   color: isActive ? "#bd8a16" : "",
-                };
+                }
               }}
             >
-              Services
+              Contact
             </NavLink>
           </li>
         </ul>
@@ -168,7 +168,7 @@ const Navbar = () => {
               style={({ isActive }) => {
                 return {
                   color: isActive ? "#bd8a16" : "",
-                };
+                }
               }}
               onClick={collapseMobileNavbar}
             >
@@ -181,7 +181,7 @@ const Navbar = () => {
               style={({ isActive }) => {
                 return {
                   color: isActive ? "#bd8a16" : "",
-                };
+                }
               }}
               onClick={collapseMobileNavbar}
             >
@@ -194,7 +194,7 @@ const Navbar = () => {
               style={({ isActive }) => {
                 return {
                   color: isActive ? "#bd8a16" : "",
-                };
+                }
               }}
               onClick={collapseMobileNavbar}
             >
@@ -207,7 +207,7 @@ const Navbar = () => {
               style={({ isActive }) => {
                 return {
                   color: isActive ? "#bd8a16" : "",
-                };
+                }
               }}
               onClick={collapseMobileNavbar}
             >
@@ -217,7 +217,7 @@ const Navbar = () => {
         </ul>
       </nav>
     </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

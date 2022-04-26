@@ -44,6 +44,7 @@ li a {
 #mobileMenu a {
   color: #333;
   font-weight: bold;
+  padding: 0.2rem 0;
 }
 #lg-menu a:hover,
 #mobileMenu a:hover {
@@ -108,4 +109,48 @@ li a {
 }
 #mobileMenu li a {
   margin: 5px auto;
+}
+
+
+/** Footer styling **/
+footer {
+  background-color:  #1a1915;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+}
+
+.footer-info{
+  display: flex;
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+
+.footer-info div{
+  padding: 0 2.5rem
+}
+
+.footer-info h4{
+  text-align: left;
+  margin-bottom: 0.5rem
+}
+
+footer p{
+  padding: 0.5rem 0;
+}
+
+footer a{
+  text-decoration: none;
+  color: #6b6b59;
+  font-weight: bold;
+  font-size: small;
+}
+
+footer span h5{
+  padding-left: 2rem;
+  margin: 3rem 0;
 }
