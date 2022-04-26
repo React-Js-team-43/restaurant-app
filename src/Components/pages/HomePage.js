@@ -1,25 +1,11 @@
-import React from "react"
+import React from "react";
 
-function HomePage() {
+const HomePage = () => {
   return (
-    <div>
-      <h1>Welcome to our restaurant</h1>
-
-      <p> Home page</p>
+    <div class="hero">
+      <h1>Hello World</h1>
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
-
-// import React from "react"
-
-// const HomePage = () => {
-//   return (
-//     <div>
-//       <h1>Header Page</h1>
-//     </div>
-//   )
-// }
-
-// export default HomePage
+export default HomePage;
