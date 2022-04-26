@@ -1,25 +1,22 @@
-import Footer from "../Footer"
-
 // Anyone creating the form can use Formsubmit > https://formsubmit.co/
+
+import PageTitle from "../PageTitle";
 
 const ContactPage = () => {
   return (
     <section>
-      <div>
-        <h2>Contact Us</h2>
-      </div>
+      <PageTitle title={"Contact Us"} />
       <div>
         <div className="contact-form">
           <form>
-            <h2>Send Us a message</h2>
+            <h4>Send Us a message</h4>
             <span>We love to hear from you</span>
           </form>
         </div>
         <div className="contact-info"></div>
       </div>
-      <Footer />
     </section>
-  )
-}
+  );
+};
 
-export default ContactPage
+export default ContactPage;

@@ -1,11 +1,10 @@
-import Footer from "../Footer";
-
 import FriedRice from "../../images/product/jollof_fried.jpg";
 import Semo from "../../images/product/semo.png";
 import YamPottage from "../../images/product/Yam-pottage.jpg";
 import JollofRice from "../../images/product/jollof-rice.jpg";
 import YamEgg from "../../images/product/yam_egg.jpg";
 import Fufu from "../../images/product/fufu.jpg";
+import PageTitle from "../PageTitle";
 
 const ProductsPage = () => {
   const foods = [
@@ -19,7 +18,7 @@ const ProductsPage = () => {
 
   return (
     <div>
-      <h2>Products Page</h2>
+      <PageTitle title={"Products"} />
       <p className="text-center">This are the list of available foods!</p>
       <div className="cards">
         {foods &&
@@ -33,7 +32,6 @@ const ProductsPage = () => {
             </div>
           ))}
       </div>
-      <Footer />
     </div>
   );
 };
