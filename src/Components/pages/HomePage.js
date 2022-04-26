@@ -6,11 +6,11 @@ function HomePage() {
     <div style={{ position: "relative" }}>
       <div
         className="home-header"
-        style={{ position: "absolute", zIndex: "99" }}
+        style={{ position: "absolute", zIndex: "9" }}
       >
         <h1>Welcome</h1>
         <h2>Restaurant 43</h2>
-        <button>Book a Table</button>
+        <button style={{ cursor: "pointer" }}>Book a Table</button>
       </div>
       <HomeSlider />
       <div

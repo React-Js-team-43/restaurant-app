@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 
 const Header = () => (
-  <header>
+  <header style={{ zIndex: "99", position: "relative" }}>
     <Navbar />
   </header>
 );

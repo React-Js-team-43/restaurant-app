@@ -1,9 +1,10 @@
 import React from "react";
+import PageTitle from "../PageTitle";
 
 const AboutPage = () => {
   return (
     <div>
-      <h1>About restaurant app</h1>
+      <PageTitle title={"About Our Restaurant"} />
     </div>
   );
 };

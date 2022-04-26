@@ -10,12 +10,14 @@ import Footer from "../Components/Footer";
 const AppRouter = () => (
   <BrowserRouter>
     <Header />
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="about" element={<AboutPage />} />
-      <Route path="products" element={<ProductsPage />} />
-      <Route path="contact" element={<ContactPage />} />
-    </Routes>
+    <div id="pages">
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="about" element={<AboutPage />} />
+        <Route path="products" element={<ProductsPage />} />
+        <Route path="contact" element={<ContactPage />} />
+      </Routes>
+    </div>
     <Footer />
   </BrowserRouter>
 );

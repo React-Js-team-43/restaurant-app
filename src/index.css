@@ -27,6 +27,9 @@ li {
 li a {
   text-decoration: none;
 }
+#pages {
+  margin-top: 50px;
+}
 
 /*Google Font for Logo*/
 @font-face {
@@ -51,6 +54,7 @@ li a {
 #mobileMenu {
   border-bottom: 1px solid #bd8a16;
   margin-bottom: 10px;
+  z-index: 999;
 }
 #lg-menu a,
 #mobileMenu a {
@@ -102,13 +106,16 @@ li a {
 }
 .mobile-menu-group {
   text-align: center;
-  position: relative;
+  position: fixed;
   height: 50px;
+  width: 100%;
+  background-color: #ffffffd4;
 }
 #mobileMenu {
   position: fixed;
   width: 100%;
   height: 100%;
+  top: 50px;
   background-color: #ffffffd4;
 }
 #mobileMenu ul {
@@ -143,8 +150,8 @@ footer {
 }
 
 .footer-info div{
-  padding: 0 2.5rem;
-  margin: auto;
+  padding: 0 1.5rem;
+  margin: 0 auto;
 }
 
 .footer-info h4{
