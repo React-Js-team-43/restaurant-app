@@ -1,5 +1,3 @@
-import Footer from "../Footer"
-
 // Anyone creating the form can use Formsubmit > https://formsubmit.co/
 
 const ContactPage = () => {
@@ -17,9 +15,8 @@ const ContactPage = () => {
         </div>
         <div className="contact-info"></div>
       </div>
-      <Footer />
     </section>
-  )
-}
+  );
+};
 
-export default ContactPage
+export default ContactPage;

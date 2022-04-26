@@ -7,6 +7,18 @@
 .hidden {
   display: none;
 }
+h1 {
+  font-size: 5em;
+}
+h2 {
+  font-size: 4em;
+}
+h3 {
+  font-size: 3em;
+}
+h4 {
+  font-size: 2em;
+}
 
 li {
   list-style-type: none;
@@ -117,10 +129,10 @@ footer {
   background-color:  #1a1915;
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   padding: 2rem;
 }
 
@@ -131,7 +143,8 @@ footer {
 }
 
 .footer-info div{
-  padding: 0 2.5rem
+  padding: 0 2.5rem;
+  margin: auto;
 }
 
 .footer-info h4{
@@ -153,4 +166,59 @@ footer a{
 footer span h5{
   padding-left: 2rem;
   margin: 3rem 0;
+  text-align: center;
+}
+
+/** Home Slider **/
+.homeslider {
+  position: relative;
+}
+.homeslider img {
+  width: 100%;
+}
+.homeslidernav {
+  width: 100%;
+  margin: auto;
+  margin-top: -5px;
+  display: grid;
+  grid-template-columns: repeat(2,
+    minmax(0, 1fr));
+}
+
+@media only screen and (min-width: 600px) {
+  .homeslidernav {
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+  }
+  .home-header {
+    top: 70px !important;
+  }
+}
+.homeslidernav input {
+  border: none;
+  padding: 1.5em;
+  cursor: pointer;
+}
+.home-header{
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.home-header h1 {
+  font-size: 99px;
+}
+.home-header h2 {
+  font-size: 29px;
+}
+.home-header button {
+  padding: 1em;
+  border: 5px outset #fff;
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  min-width: 300px;
+  margin-top: 10px;
 }
