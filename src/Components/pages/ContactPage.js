@@ -8,7 +8,7 @@ const ContactPage = () => {
       <PageTitle title={"Contact Us"} />
       <div>
         <div className="contact-form">
-          <form>
+          <form style={{ textAlign: "center" }}>
             <h4>Send Us a message</h4>
             <span>We love to hear from you</span>
           </form>
