@@ -127,6 +127,56 @@ li a {
 }
 
 
+/** Contact Page styling **/
+.contact-container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  margin: 0 auto;
+  padding: 2rem
+}
+
+#contact-page{
+  margin-bottom: 3rem;
+}
+
+#contact-page p{
+  margin-bottom: 1rem;
+}
+
+form{
+  height: fit-content;
+  border: 1px solid #bd8a16;
+  width: 20rem;
+  text-align: center;
+}
+
+form label{
+  width: 100%;
+  padding: 0.5rem;
+  display: block;
+  font-size: 1.2rem;
+}
+
+form input, form textarea{
+  background-color: #fff;
+  border: 1px solid #bd8a16;
+  font-size: 1.15rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 0.5rem;
+}
+
+form input{
+  height: 2.2rem;
+}
+
+form button{
+  margin: 2.5rem 0;
+  padding:0.5rem 6rem;
+  border: 1px solid #bd8a16;
+}
+
 /** Footer styling **/
 footer {
   background-color:  #1a1915;
