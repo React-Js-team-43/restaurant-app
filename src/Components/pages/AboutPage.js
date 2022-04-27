@@ -3,7 +3,7 @@ import PageTitle from "../PageTitle";
 
 const AboutPage = () => {
   return (
-    <section>
+    <section style={{ padding: "0 50px" }}>
       <PageTitle title={"About Our Restaurant"} />
       <p>
         Effective product pages immediately convey the value of a featured
