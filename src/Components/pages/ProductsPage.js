@@ -17,7 +17,7 @@ const ProductsPage = () => {
   ];
 
   return (
-    <div>
+    <section>
       <PageTitle title={"Products"} />
       <p className="text-center">This are the list of available foods!</p>
       <div className="cards">
@@ -32,7 +32,7 @@ const ProductsPage = () => {
             </div>
           ))}
       </div>
-    </div>
+    </section>
   );
 };
 
