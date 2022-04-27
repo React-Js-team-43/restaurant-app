@@ -10,7 +10,7 @@ const ContactPage = () => {
         <div className="contact-form">
           <form
             style={{ textAlign: "center" }}
-            action="https://formsubmit.co/samuelajala01@email.com"
+            action="https://formsubmit.co/samuelajala01@gmail.com"
             method="POST"
           >
             <h4>Send Us a message</h4>
@@ -39,7 +39,7 @@ const ContactPage = () => {
               <textarea
                 name="message"
                 required
-                placeholder="Question/Comment"
+                placeholder="Let's hear from you"
               />
             </label>
             <button type="submit">Send</button>
