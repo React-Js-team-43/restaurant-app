@@ -17,13 +17,13 @@ const ProductsPage = () => {
   ];
 
   return (
-    <div>
+    <section>
       <PageTitle title={"Products"} />
       <p className="text-center">This are the list of available foods!</p>
       <div className="cards">
         {foods &&
-          foods.map((food) => (
-            <div className="card-box">
+          foods.map((food, index) => (
+            <div className="card-box" key={index}>
               <div className="card-image">
                 <img src={food.image} alt="" />
               </div>
@@ -32,7 +32,7 @@ const ProductsPage = () => {
             </div>
           ))}
       </div>
-    </div>
+    </section>
   );
 };
 

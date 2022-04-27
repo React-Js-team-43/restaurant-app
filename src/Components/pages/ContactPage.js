@@ -1,11 +1,20 @@
-import PageTitle from "../PageTitle"
+
+
+
+import PageTitle from "../PageTitle";
+
 
 const ContactPage = () => {
   return (
     <section id="contact-page">
       <PageTitle title={"Contact Us"} />
-      <div class="contact-container">
-        <div className="contact-form">
+
+
+  
+
+      <div className="contact-container">
+        <div className="contact-form" style={{ margin: "auto" }}>
+
           <form
             style={{ textAlign: "center" }}
             action="https://formsubmit.co/d7fcbe04758434a6608acbab04f926d1.com"
@@ -38,7 +47,10 @@ const ContactPage = () => {
             <button type="submit">Send</button>
           </form>
         </div>
-        <div className="contact-info">
+
+      
+        <div className="contact-info" style={{ margin: "10px auto" }}>
+
           <div>
             <h4>Address</h4>
             <p>Las Colinas Plaza</p>
