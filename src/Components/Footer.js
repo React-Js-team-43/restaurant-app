@@ -27,40 +27,40 @@ const Footer = () => {
               <a href="/">Press & Awards</a>
             </p>
           </div>
-          <div>
+          <div className="menu-info">
             <h4>Menus</h4>
             <p>
-              <a href="/">The Real Deal</a>
+              <a href="/products">Lunch</a>
             </p>
             <p>
-              <a href="/">Our Story</a>
+              <a href="/products">Dinner</a>
             </p>
             <p>
-              <a href="/">The Team</a>
+              <a href="/products">Desserts</a>
             </p>
             <p>
-              <a href="/">Careers</a>
+              <a href="/products">Drinks</a>
             </p>
             <p>
-              <a href="/">Scholarship</a>
+              <a href="/products">Children</a>
             </p>
             <p>
-              <a href="/">Merchandise</a>
+              <a href="/products">Sunday Brunch</a>
             </p>
           </div>
           <div>
             <h4>Get In Touch</h4>
             <p>
-              <a href="/">The Real Deal</a>
+              <a href="/">Private Rooms</a>
             </p>
             <p>
-              <a href="/">Our Story</a>
+              <a href="/">Gift card</a>
             </p>
             <p>
-              <a href="/">The Team</a>
+              <a href="/">Reservations</a>
             </p>
             <p>
-              <a href="/">Careers</a>
+              <a href="/contact">Contact us</a>
             </p>
           </div>
         </div>
@@ -69,7 +69,7 @@ const Footer = () => {
         </span>
       </section>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
