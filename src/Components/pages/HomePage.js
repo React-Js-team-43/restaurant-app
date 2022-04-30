@@ -2,7 +2,23 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { HomeSlider } from "./regions/HomeSlider";
 
+import Image1 from "../../images/gallery/1.jpg";
+import Image2 from "../../images/gallery/2.jpg";
+import Image3 from "../../images/gallery/3.jpg";
+import Image4 from "../../images/gallery/4.jpg";
+import Image5 from "../../images/gallery/5.jpg";
+import Image6 from "../../images/gallery/6.jpg";
+
 function HomePage() {
+  const gallery = [
+    { id: 1, image: Image1 },
+    { id: 2, image: Image2 },
+    { id: 3, image: Image3 },
+    { id: 4, image: Image4 },
+    { id: 5, image: Image5 },
+    { id: 6, image: Image6 },
+  ];
+
   return (
     <div>
       <div style={{ position: "relative" }}>
@@ -45,6 +61,16 @@ function HomePage() {
         >
           Browse our products/dishes
         </Link>
+      </div>
+      <div className="cards">
+        {gallery &&
+          gallery.map((newimage) => (
+            <div className="card-box-home">
+              <div className="card-image-home">
+                <img src={newimage.image} alt="" />
+              </div>
+            </div>
+          ))}
       </div>
     </div>
   );

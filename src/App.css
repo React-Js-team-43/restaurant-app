@@ -38,3 +38,28 @@ h2 {
     font-family: Tahoma, sans-serif;
     color: #ff1e00;
 }
+
+
+  /*Home page Gallery*/
+  
+  .card-box-home {
+    width: 13rem;
+    height: 15rem;
+    margin: 1rem;
+    border: 1px solid pink;
+    border-radius: 16px;
+    background-color: #cccc14;
+  }
+  
+  .card-box-home .card-image-home {
+    height: 15rem;
+    width: 13rem;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  
+  h6 {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  
